@@ -1,0 +1,61 @@
+load("@fbcode_macros//build_defs:python_binary.bzl", "python_binary")
+load("@fbcode_macros//build_defs:python_library.bzl", "python_library")
+# load("@fbsource//tools/build_defs:glob_defs.bzl", "glob")
+
+oncall("pi")
+
+task_internal_deps = [
+    "//caffe2:torch",
+    "//pytorch/vision:torchvision",
+    "//pytorch/tensorboardX:tensorboardX",
+    "//vision/fair/fvcore/fvcore:fvcore",
+    "//manifold/clients/python:manifold_client",
+    "//tensorboard:lib",
+    "fbsource//third-party/pypi/tqdm:tqdm",
+    "fbsource//third-party/pypi/numpy:numpy",
+    "fbsource//third-party/pypi/torch:torch",
+    "fbsource//third-party/pypi/matplotlib:matplotlib",
+    "fbsource//third-party/pypi/pandas:pandas",
+]
+
+task_external_deps = [
+    ("scipy", None),
+]
+
+python_library(
+    name = "lib",
+    srcs = glob([
+        "*.py",
+        "**/*.py",
+        "**/**/*.py",
+    ]),
+    deps = [
+        "fbsource//third-party/pypi/ipython:ipython",
+        "fbsource//third-party/pypi/matplotlib:matplotlib",
+        "fbsource//third-party/pypi/numpy:numpy",
+        "fbsource//third-party/pypi/opencv-python:opencv-python",
+        "fbsource//third-party/pypi/pillow:pillow",
+        "//caffe2:torch_eager",
+        "//manifold/clients/python:manifold_client",
+        "//pi_algo/infra:pi_infra",
+        "//pytorch/vision:torchvision",
+    ],
+)
+
+python_binary(
+    name = "train",
+    main_function = "pi_algo.projects.DRL_AEC.DRL_train.main",
+    par_style = "xar",
+    deps = [
+        ":lib",
+    ],
+)
+
+python_binary(
+    name = "validation",
+    main_function = "pi_algo.projects.DRL_AEC.DRL_validation.main",
+    par_style = "xar",
+    deps = [
+        ":lib",
+    ],
+)

@@ -1,0 +1,77 @@
+{
+    "scene1": {
+        "image_path": "C:\\Users\\xingang\\Desktop\\AEC_dataset\\ExpoSweep\\evaluation\\indoor\\bright_scene1",
+        "average_luma": 128.6499267578125,
+        "dynamic_range_ratio": 28.130802740090182
+    },
+    "scene2": {
+        "image_path": "C:\\Users\\xingang\\Desktop\\AEC_dataset\\ExpoSweep\\evaluation\\indoor\\bright_scene2",
+        "average_luma": 132.05784301757814,
+        "dynamic_range_ratio": 27.30294911588831
+    },
+    "scene3": {
+        "image_path": "C:\\Users\\xingang\\Desktop\\AEC_dataset\\ExpoSweep\\evaluation\\indoor\\bright_scene3",
+        "average_luma": 166.30530598958333,
+        "dynamic_range_ratio": 30.069002783104096
+    },
+    "scene4": {
+        "image_path": "C:\\Users\\xingang\\Desktop\\AEC_dataset\\ExpoSweep\\evaluation\\indoor\\bright_scene4",
+        "average_luma": 133.35913696289063,
+        "dynamic_range_ratio": 27.30294911588831
+    },
+    "scene5": {
+        "image_path": "C:\\Users\\xingang\\Desktop\\AEC_dataset\\ExpoSweep\\evaluation\\indoor\\bright_scene5",
+        "average_luma": 141.03477172851564,
+        "dynamic_range_ratio": 22.555731132470452
+    },
+    "scene6": {
+        "image_path": "C:\\Users\\xingang\\Desktop\\AEC_dataset\\ExpoSweep\\evaluation\\indoor\\dim_scene1",
+        "average_luma": 62.17744140625,
+        "dynamic_range_ratio": 30.180206741821593
+    },
+    "scene7": {
+        "image_path": "C:\\Users\\xingang\\Desktop\\AEC_dataset\\ExpoSweep\\evaluation\\indoor\\dim_scene2",
+        "average_luma": 50.78299479166667,
+        "dynamic_range_ratio": 22.713251316177356
+    },
+    "scene8": {
+        "image_path": "C:\\Users\\xingang\\Desktop\\AEC_dataset\\ExpoSweep\\evaluation\\indoor\\dim_scene3",
+        "average_luma": 79.30963134765625,
+        "dynamic_range_ratio": 28.70732904651709
+    },
+    "scene9": {
+        "image_path": "C:\\Users\\xingang\\Desktop\\AEC_dataset\\ExpoSweep\\evaluation\\indoor\\dim_scene4",
+        "average_luma": 72.21883138020833,
+        "dynamic_range_ratio": 21.527766249123765
+    },
+    "scene10": {
+        "image_path": "C:\\Users\\xingang\\Desktop\\AEC_dataset\\ExpoSweep\\evaluation\\indoor\\dim_scene5",
+        "average_luma": 76.32190856933593,
+        "dynamic_range_ratio": 26.14991988967534
+    },
+    "scene11": {
+        "image_path": "C:\\Users\\xingang\\Desktop\\AEC_dataset\\ExpoSweep\\evaluation\\indoor\\neutral_scene1",
+        "average_luma": 88.15787658691406,
+        "dynamic_range_ratio": 27.30294911588831
+    },
+    "scene12": {
+        "image_path": "C:\\Users\\xingang\\Desktop\\AEC_dataset\\ExpoSweep\\evaluation\\indoor\\neutral_scene2",
+        "average_luma": 86.1268310546875,
+        "dynamic_range_ratio": 27.920109212797964
+    },
+    "scene13": {
+        "image_path": "C:\\Users\\xingang\\Desktop\\AEC_dataset\\ExpoSweep\\evaluation\\indoor\\neutral_scene3",
+        "average_luma": 119.49666666666667,
+        "dynamic_range_ratio": 22.922559923938465
+    },
+    "scene14": {
+        "image_path": "C:\\Users\\xingang\\Desktop\\AEC_dataset\\ExpoSweep\\evaluation\\indoor\\neutral_scene4",
+        "average_luma": 115.22938537597656,
+        "dynamic_range_ratio": 28.555489697612074
+    },
+    "scene15": {
+        "image_path": "C:\\Users\\xingang\\Desktop\\AEC_dataset\\ExpoSweep\\evaluation\\indoor\\neutral_scene5",
+        "average_luma": 112.64017903645833,
+        "dynamic_range_ratio": 28.130802740090182
+    }
+}

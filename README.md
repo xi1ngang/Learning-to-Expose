@@ -1,9 +1,50 @@
-# ExpoSweep Dataset
+# Learning-to-Expose
+*A Deep-RL framework for fast, robust camera auto-exposure control.*
 
-**ExpoSweep** is a large-scale real-world image dataset for exposure control research. It contains:
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-- `training/`: 100 indoor scenes across varying lighting conditions.
-- `evaluation/`: 30 held-out scenes (15 indoor, 15 outdoor) for OOD evaluation.
+---
 
-Each scene consists of systematically varied exposure settings.
+## ✨ Overview
+Learning-to-Expose trains a **Deep Reinforcement Learning (DRL)** agent that adjusts exposure in real time, producing well-exposed frames while avoiding abrupt brightness changes.  
+Key features:
+
+| Feature | Description |
+|---------|-------------|
+| **Real-world data** | 14,430 images captured in 130 scenes—no sim-to-real gap |
+| **Multi-component reward** | Balances perceptual image quality (PSNR/SSIM) with temporal smoothness |
+| **Discrete-action DQN** | Efficient training (≈3 steps to converge per episode) |
+| **12× faster** | Compared with camera-in-the-loop RL alternatives |
+| **Promising OOD generalization** | Trained indoors, tested on unseen outdoor scenes |
+
+---
+
+## 📂 ExpoSweep Dataset
+*ExpoSweep* underpins the project with diverse, exposure-swept image stacks.
+
+| Split | Scenes | Images | Notes |
+|-------|--------|--------|-------|
+| **Train** | 100 indoor | *=*11 100 | Offices, kitchens, labs, libraries |
+| **Test-In** | 15 indoor | *=*1 650 | Held-out rooms in same buildings |
+| **Test-OOD** | 15 outdoor | *=*1 650 | Gardens, parking lots, sports courts |
+
+Each scene folder contains PNGs whose filenames encode the exposure value (EV).  
+Dataset preview and download links are provided in [`ExpoSweep/README`](ExpoSweep).:contentReference[oaicite:0]{index=0}
+
+---
+
+## 🚀 Quick Start
+
+### 1  Environment
+```bash
+# Clone
+git clone https://github.com/xi1ngang/Learning-to-Expose.git
+cd Learning-to-Expose
+
+# Create env  (PyTorch ≥ 2.1, OpenCV, tqdm, etc.)
+conda create -n lte python=3.9
+conda activate lte
+pip install -r requirements.txt
+
 

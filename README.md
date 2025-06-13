@@ -1,7 +1,7 @@
 # Learning-to-Expose
 *A Deep-RL framework for fast, robust camera auto-exposure control.*
 
-[![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/Python-%2B-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 ---
@@ -30,7 +30,7 @@ Key features:
 | **Test-OOD** | 15 outdoor | **=** 1,650 | Gardens, parking lots, sports courts |
 
 Each scene folder contains PNGs whose filenames encode the exposure value (EV).  
-Dataset preview and download links are provided in [`ExpoSweep/README`](ExpoSweep).
+Dataset is provided in [`ExpoSweep/README`](ExpoSweep).
 
 ---
 

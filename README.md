@@ -25,9 +25,9 @@ Key features:
 
 | Split | Scenes | Images | Notes |
 |-------|--------|--------|-------|
-| **Train** | 100 indoor | **=** 11,100 | Offices, kitchens, labs, libraries |
-| **Test-In** | 15 indoor | **=** 1,650 | Held-out indoor scenes for ID evaluation |
-| **Test-OOD** | 15 outdoor | **=** 1,650 | Held out outdoor scenes (Gardens, parking lots, sports courts) for OOD evaluation |
+| **Train** | 100 indoor | 11,100 | Offices, kitchens, labs, libraries |
+| **Test-In** | 15 indoor | 1,650 | Held-out indoor scenes for ID evaluation |
+| **Test-OOD** | 15 outdoor | 1,650 | Held out outdoor scenes (Gardens, parking lots, sports courts) for OOD evaluation |
 
 Each scene folder contains PNGs whose filenames encode the exposure value (EV).  
 Dataset is provided in [`ExpoSweep`](ExpoSweep).

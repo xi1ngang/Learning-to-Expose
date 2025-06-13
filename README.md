@@ -12,7 +12,7 @@ Key features:
 
 | Feature | Description |
 |---------|-------------|
-| **Real-world data** | 14,430 images captured in 130 scenes—no sim-to-real gap |
+| **Real-world data** | 14,430 images captured in 130 real-life scenes |
 | **Multi-component reward** | Balances perceptual image quality (PSNR/SSIM) with temporal smoothness |
 | **Discrete-action DQN** | Efficient training (≈3 steps to converge per episode) |
 | **12× faster** | Compared with camera-in-the-loop RL alternatives |
@@ -25,9 +25,9 @@ Key features:
 
 | Split | Scenes | Images | Notes |
 |-------|--------|--------|-------|
-| **Train** | 100 indoor | *=*11 100 | Offices, kitchens, labs, libraries |
-| **Test-In** | 15 indoor | *=*1 650 | Held-out rooms in same buildings |
-| **Test-OOD** | 15 outdoor | *=*1 650 | Gardens, parking lots, sports courts |
+| **Train** | 100 indoor | **=** 11,100 | Offices, kitchens, labs, libraries |
+| **Test-In** | 15 indoor | **=** 1,650 | Held-out rooms in same buildings |
+| **Test-OOD** | 15 outdoor | **=** 1,650 | Gardens, parking lots, sports courts |
 
 Each scene folder contains PNGs whose filenames encode the exposure value (EV).  
 Dataset preview and download links are provided in [`ExpoSweep/README`](ExpoSweep).:contentReference[oaicite:0]{index=0}
@@ -42,9 +42,9 @@ Dataset preview and download links are provided in [`ExpoSweep/README`](ExpoSwee
 git clone https://github.com/xi1ngang/Learning-to-Expose.git
 cd Learning-to-Expose
 
-# Create env  (PyTorch ≥ 2.1, OpenCV, tqdm, etc.)
-conda create -n lte python=3.9
-conda activate lte
+# Create env  
+conda create -n DRL_AEC python=3.11
+conda activate DRL_AEC
 pip install -r requirements.txt
 
 

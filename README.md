@@ -30,7 +30,7 @@ Key features:
 | **Test-OOD** | 15 outdoor | **=** 1,650 | Gardens, parking lots, sports courts |
 
 Each scene folder contains PNGs whose filenames encode the exposure value (EV).  
-Dataset preview and download links are provided in [`ExpoSweep/README`](ExpoSweep).:contentReference[oaicite:0]{index=0}
+Dataset preview and download links are provided in [`ExpoSweep/README`](ExpoSweep).
 
 ---
 

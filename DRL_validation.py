@@ -15,7 +15,6 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
-from manifold.clients.python import ManifoldClient
 from PIL import Image, ImageOps
 
 from .DRL_env import ActionSpace, CameraCaptureEnv
